@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.5s;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(228, 218, 136, 0.714);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lessons{
+    width: 80%;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px  grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game_area{
+    width: 80%;
+    height: 450px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px  grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats{
+    width: 80%;
+    height: 100px;
+    border: 1px solid gray; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.stats>p{
+    font-size: 22px;
+    width: 25%;
+}
+.input_area{
+    width: 80%;
+    height: 100px;
+    background: #f4f1f1;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pers{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: lightblue;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    background: url(https://onexi.org/jrw/L4b-PacManExercise/Code/PacMan2.png);
+    background-size: 100% 100%;
+    
+}
+.input_text{
+    display: none;
+    width: 1000000px;
+    top: 35%;
+    left: 40%;
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 3px;
+     
+}
+.input_text::first-letter{
+    background: salmon;
+    padding: 2px;
+}
+.start{
+    font-size: 30px;
+}
+
+.restart{
+    width: 25%;
+    height: 100px;
+    background: salmon;
+    border-radius: 25px;
+    border: none    ;
+}
+.restart:hover{
+    transition: all ease 0.3s;
+    box-shadow: 4px 4px 4px  grey;
+    transform: scale(1.05);
+}
+
+
+
+.lesson{
+    width: 18%;
+    height: 200px;
+    background: sandybrown;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lesson:hover{
+    transition: all ease 0.3s;
+    box-shadow: 4px 4px 4px  grey;
+    transform: scale(1.05);
+}
+
+@keyframes eat{
+    50%{
+        
+        
+    }
+    100%{
+        transform: rotate(-5deg);
+        background: url(https://onexi.org/jrw/L4b-PacManExercise/Code/PacMan2.png);
+        background-size: 100% 100%;  
+    }
+    
+}
